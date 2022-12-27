@@ -1,0 +1,43 @@
+
+<div class="row">
+    <!--Start Product  -->                                    
+<div class="col-md-6 col-lg-4" >
+    <div class="product-box p-2 mb-3">
+        <div class="product">
+            <div class="product-image">
+               <a [routerLink]="['/', 'product', product.id]"> <img class="img-fluid" [src]="product.url" style="height: 200px;"> </a>
+            </div>
+        </div>
+        <div class="product-info py-3">
+             <div class="product-name px-2 pt-2">
+                   <h4 class=" m-0" [title]="product.name">{{product.name}}</h4>
+               </div>
+            
+                <div class="product-price px-2 pt-3 d-flex align-items-center">
+                    <span class="old-price ">EGP {{product.price | currency}}</span>
+                </div>
+
+                 <div class=" px-2 pt-3 d-flex w-50  justify-content-between " style="height: 80px;">
+                   <!-- <input type="number" class="form-control" min="1" max="5" [(ngModel)]="amount"> -->
+                   <select id="selectNumber" [(ngModel)]="amount" style="width: 150px; text-align: center;">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                   <!-- <input type="number" id="quantity" name="quantity" min="1" max="5"> -->
+                    <button class=" btn btn-primary" (click)="Addtocart()">Add to cart</button>
+                 </div> 
+        </div> 
+        </div> 
+     </div>
+</div> 
+<!-- End Product -->
+
+

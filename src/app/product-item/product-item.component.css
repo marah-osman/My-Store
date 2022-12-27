@@ -1,0 +1,16 @@
+.roww{
+    /* height:300px; */
+    display: flex;
+    /* grid-template-columns: auto auto auto auto; */
+    /* gap: 10px; */
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
+}
+
+.roww .product{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+  }

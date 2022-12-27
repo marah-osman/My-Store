@@ -1,0 +1,60 @@
+<section class="details py-5" *ngIf="product">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 mb-3 mb-lg-0 ">
+                <div class="images-container bg-white p-5 h-100">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-images d-flex d-md-block align-items-center justify-content-between ">
+
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="main-image" id="mainImage">
+                                <img [src]=" product.url" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="product-details bg-white p-5 ">
+                
+                        <div class="product-info px-2 pt-2">
+                            <h2 class="d-block my-2 fw-bold ">{{product.name}}</h2>
+                            <p>{{product.description}}</p>
+              
+                        </div>
+                       
+                        <div class="product-price px-2 pt-3 mb-2">
+                          
+                            <div class="old-price pt-3">
+                                <span class="price pe-3 ">EGP {{product.price}}</span> 
+                            </div>
+                            
+                        </div> 
+                       
+                       
+                        <div class=" px-2 pt-3 d-flex w-50 justify-content-between ">
+                            <select id="selectNumber" [(ngModel)]="amount" style="width: 200px; text-align: center;">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                    <button class=" btn btn-primary" (click)="Addtocart(product.id)">Add to cart</button>
+                     
+                 </div> 
+                   
+                </div>
+            </div>
+                
+        </div>
+    </div>
+</section>

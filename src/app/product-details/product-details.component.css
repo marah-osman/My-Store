@@ -1,0 +1,27 @@
+.quantity
+    .plus{
+        background-color: #1363DF;
+        cursor: pointer;
+        color:#FFF;
+    }
+    .minus{
+        background-color: #1363DF;
+        cursor: pointer;
+        color: #FFF;
+    }
+
+    .custom-btn{
+        color: #333;
+        font-size: 17px;
+        font-weight: 400;
+        outline: none;
+        border: none;
+        background-color: #1363DF;
+        color: #FFF;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        /* &:hover{
+            color:$brand_color;
+            background-color: $background_color;
+        } */
+    }
