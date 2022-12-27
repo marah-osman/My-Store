@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Post } from 'src/models/posts';
 import { Product } from 'src/models/product';
 import { CartService } from '../services/cart.service';
 import { ProductsService } from '../services/products.service';
